@@ -1,5 +1,5 @@
 {
-  "name": "sveltekit-tailwind-a17-template",
+  "name": "arkive-web",
   "version": "0.0.1",
   "scripts": {
     "dev": "svelte-kit dev",
