@@ -2,6 +2,9 @@ FROM node:16-slim@sha256:c51416d582339a0f9f5f8da347a2dd8b585e1f5893a627e9b3a2083
 
 WORKDIR /arkive-web
 RUN chown -R node:node ./
+RUN addgroup --gid 1024 mygroup
+RUN adduser node mygroup
+# RUN adduser --disabled-password --gecos "" --force-badname --ingroup mygroup myuser
 USER node
 
 COPY src src/
