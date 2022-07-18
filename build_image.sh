@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Build a docker image from current commit, tag it with the commit hash
 # and push to registry.
 #

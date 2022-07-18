@@ -13,7 +13,7 @@ COPY tailwind.config.cjs .
 COPY svelte.config.js .
 COPY tsconfig.json .
 
-RUN npm clean-install && npm cache clean --force
+RUN npm clean-install
 
 ENV NODE_ENV production
 RUN npm run build
